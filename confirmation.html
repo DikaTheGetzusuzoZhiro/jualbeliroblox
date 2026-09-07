@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070b1a">
+  <title>Konfirmasi — TAMA STORE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-orb orb-a"></div><div class="bg-orb orb-b"></div><div class="bg-grid"></div>
+<header class="topbar"><div class="container topbar-in">
+  <a class="wordmark" href="index.html"><span class="wordmark-main">TAMA</span><span class="wordmark-sub">STORE</span></a>
+  <a class="top-link" href="order.html">Pembayaran</a>
+</div></header>
+
+<main class="container confirm-wrap">
+  <div class="service-banner"><span class="service-pulse"></span><b>LAYANAN 24H</b><span>Konfirmasi order setiap saat</span></div>
+  <section class="confirm-card">
+    <div class="section-kicker">STEP TERAKHIR</div>
+    <h1>Upload bukti transfer</h1>
+    <p class="confirm-copy">Pilih bukti pembayaran, lalu buka WhatsApp untuk mengirim konfirmasi. File tidak diunggah ke server oleh halaman statis ini.</p>
+
+    <label class="upload-box">
+      <input id="proofFile" type="file" accept="image/*,.pdf">
+      <span class="upload-mark">+</span>
+      <b>Pilih bukti transfer</b>
+      <small>JPG, PNG, WEBP atau PDF</small>
+    </label>
+
+    <div class="file-preview hidden" id="preview"></div>
+
+    <div class="confirm-summary">
+      <div><span>Produk</span><b>Akun Polos On Mic</b></div>
+      <div><span>Total</span><b>Rp20.000</b></div>
+    </div>
+
+    <button class="wa-btn" id="waBtn">KONFIRMASI VIA WHATSAPP <b>↗</b></button>
+    <div class="toast" id="uploadStatus" aria-live="polite"></div>
+    <p class="note">Saat WhatsApp terbuka, lampirkan bukti transfer yang sama ke chat tersebut.</p>
+  </section>
+</main>
+
+<footer class="footer"><div class="container footer-in"><div><strong>TAMA STORE</strong><span>Confirmation Center</span></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
