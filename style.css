@@ -75,3 +75,17 @@ footer{border-top:1px solid var(--line);color:#7e8baa;font-size:12px}
   .hero{padding-top:16px}.section{padding-top:45px}.product-info h2{font-size:27px}
   .price{font-size:27px}.payment-card{padding:19px}.footer-inner{flex-direction:column;justify-content:center;padding:16px 0}
 }
+
+/* Modern payment logos & order counter */
+.orders-count{display:inline-flex;align-items:baseline;gap:7px;margin-top:15px;padding:9px 13px;border:1px solid rgba(49,202,255,.18);border-radius:12px;background:rgba(19,36,75,.55)}
+.orders-count strong{font-size:17px;color:#35caff}.orders-count span{font-size:11px;color:#91a0c2}.orders-count.centered{margin-top:14px}
+.check{display:inline-grid;place-items:center;width:17px;height:17px;border-radius:50%;background:rgba(53,213,255,.13);color:#35d5ff;font-size:10px;margin-right:7px}
+.info-icon{width:36px;height:36px;border-radius:11px;border:1px solid rgba(53,213,255,.2);background:rgba(24,151,255,.10);position:relative}
+.icon-speed:after{content:"";position:absolute;left:10px;top:7px;width:12px;height:19px;border-right:3px solid #35d5ff;transform:skew(-18deg) rotate(22deg);border-radius:2px}
+.icon-safe:before{content:"";position:absolute;inset:9px 10px 8px;border:2px solid #35d5ff;border-radius:8px 8px 10px 10px}
+.icon-safe:after{content:"✓";position:absolute;left:12px;top:8px;color:#35d5ff;font-size:10px;font-weight:900}
+.icon-support:before{content:"";position:absolute;inset:9px;border:2px solid #35d5ff;border-radius:50%}
+.icon-support:after{content:"";position:absolute;left:7px;right:7px;bottom:5px;height:5px;border:2px solid #35d5ff;border-top:0;border-radius:0 0 8px 8px}
+.method-logo{width:auto;min-width:76px;padding:0 8px;height:40px;border-radius:11px;display:grid;place-items:center;font-weight:900;font-size:12px;letter-spacing:-.3px}
+.sea{background:linear-gradient(135deg,#18a7df,#087ec5);color:white}.dana{background:#168cff;color:white}.gopay{background:#00a77b;color:white}
+.qris-mini{display:inline-grid;place-items:center;padding:4px 6px;margin-right:7px;border-radius:5px;background:#fff;color:#111;font-size:9px;font-weight:900;letter-spacing:.4px}
