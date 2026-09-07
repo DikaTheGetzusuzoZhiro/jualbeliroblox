@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070b1a">
+  <title>Pembayaran — TAMA STORE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-orb orb-a"></div><div class="bg-orb orb-b"></div><div class="bg-grid"></div>
+
+<header class="topbar">
+  <div class="container topbar-in">
+    <a class="wordmark" href="index.html"><span class="wordmark-main">TAMA</span><span class="wordmark-sub">STORE</span></a>
+    <a class="top-link" href="index.html">Beranda</a>
+  </div>
+</header>
+
+<main class="container checkout">
+  <div class="service-banner"><span class="service-pulse"></span><b>LAYANAN 24H</b><span>Siap membantu proses order</span></div>
+  <div class="checkout-head">
+    <div>
+      <div class="section-kicker">TAMA STORE / CHECKOUT</div>
+      <h1>Pilih metode pembayaran</h1>
+      <p>Produk <b>Akun Polos On Mic</b> · Total <b>Rp20.000</b></p>
+    </div>
+    <div class="secure-chip">ORDER #1271+</div>
+  </div>
+
+  <div class="payment-card">
+    <div class="step-title"><span>01</span><div><b>Bank / E-Wallet</b><small>Tekan kartu untuk menyalin nomor.</small></div></div>
+
+    <div class="methods">
+      <button class="pay-method" data-copy="901010160791">
+        <span class="method-name">SEABANK</span>
+        <span class="pay-info"><b>SeaBank</b><small>901010160791</small></span><em>SALIN</em>
+      </button>
+      <button class="pay-method" data-copy="0895328044863">
+        <span class="method-name">DANA</span>
+        <span class="pay-info"><b>DANA</b><small>0895328044863</small></span><em>SALIN</em>
+      </button>
+      <button class="pay-method" data-copy="0895328044863">
+        <span class="method-name">GOPAY</span>
+        <span class="pay-info"><b>GoPay</b><small>0895328044863</small></span><em>SALIN</em>
+      </button>
+    </div>
+
+    <div class="or-line"><span>ATAU</span></div>
+
+    <div class="step-title"><span>02</span><div><b>QRIS</b><small>Scan kode QRIS untuk membayar.</small></div></div>
+    <button class="qris-toggle" id="qrisBtn"><span class="qris-mini">QR</span> TAMPILKAN QRIS</button>
+    <div class="qris-card hidden" id="qrisCard">
+      <div class="qris-head"><span class="qris-symbol">QR</span><div><b>QRIS</b><small>PEMBAYARAN</small></div></div>
+      <img src="assets/qris.jpg" alt="QRIS TAMA STORE">
+      <p>Pastikan nama penerima sesuai sebelum menyelesaikan transaksi.</p>
+    </div>
+
+    <div class="checkout-total"><span>Total pembayaran</span><b>Rp20.000</b></div>
+
+    <a href="confirmation.html" target="_blank" rel="noopener" class="primary-btn center">SUDAH BAYAR <b>↗</b></a>
+    <div class="microcopy center-text">Lanjutkan ke halaman upload bukti transfer.</div>
+    <div class="toast" id="toast" aria-live="polite"></div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container footer-in"><div><strong>TAMA STORE</strong><span>Payment Center</span></div><a class="top-link" href="index.html">Kembali</a></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
